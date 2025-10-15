@@ -23,198 +23,469 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 # PROGRAM :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Shopping World</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+nav {
+  background-color: #222;
+  overflow: hidden;
+}
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #f39c12;
+}
+.active {
+  background-color: #f39c12;
+}
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="active" href="home.html">Home</a>
+  <a href="electronic.html">Electronics</a>
+  <a href="fashion.html">Fashion</a>
+  <a href="foot weare.html">Footwear</a>
+  <a href="login.html" class="login">Login</a>
+
+</nav>
+
+<div class="container">
+  <h1>Welcome to Shopping World!</h1>
+  <p>Your one-stop shop for Electronics, Fashion & Footwear.</p>
+
+  <div class="gallery">
+    <img src="Screenshot 2025-10-14 235058.png" alt="Shop 1">
+    <img src="Screenshot 2025-10-14 234939.png" alt="Shop 2">
+    <img src="Screenshot 2025-10-14 234716.png" alt="Shop 3">
+    <img src="Screenshot 2025-10-14 234816.png" alt="Shop 4">
+    <img src="Screenshot 2025-10-15 065914.png" alt="Camera">
+    <img src="Screenshot 2025-10-15 070111.png" alt="Camera">
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Shopping World | Designed by Ishwarya
+</footer>
+
+</body>
+</html>
+
+electronic.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electronics - Shopping World</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #eef2f3;
+}
+nav {
+  background-color: #222;
+  overflow: hidden;
+}
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #3498db;
+}
+.active {
+  background-color: #3498db;
+}
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a class="active" href="electronic.html">Electronics</a>
+  <a href="fashion.html">Fashion</a>
+  <a href="foot weare.html">Footwear</a>
+  <a href="login.html" class="login">Login</a>
+
+</nav>
+
+<div class="container">
+  <h2>Latest Electronics</h2>
+  <p>Shop top brands for mobiles, laptops, and gadgets.</p>
+
+  <div class="gallery">
+    <img src="Screenshot 2025-10-15 002417.png" alt="Laptop">
+    <img src="Screenshot 2025-10-15 002537.png" alt="bluetooth">
+    <img src="Screenshot 2025-10-15 002747.png" alt="Mobile">
+    <img src="Screenshot 2025-10-15 002851.png" alt="Camera">
+    <img src="Screenshot 2025-10-15 065420.png" alt="Camera">
+    <img src="Screenshot 2025-10-15 065504.png" alt="Camera">
+    <img src="Screenshot 2025-10-15 065610.png" alt="Camera">
+    <img src="Screenshot 2025-10-15 065710.png" alt="Camera">
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Shopping World | Designed by Ishwarya
+</footer>
+
+</body>
+</html>
+
+fasion.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion - Shopping World</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff5f7;
+}
+nav {
+  background-color: #222;
+  overflow: hidden;
+}
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #e84393;
+}
+.active {
+  background-color: #e84393;
+}
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery img {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="electronic.html">Electronics</a>
+  <a class="active" href="fashion.html">Fashion</a>
+  <a href="foot weare.html">Footwear</a>
+  <a href="login.html" class="login">Login</a>
+
+</nav>
+
+<div class="container">
+  <h2>Trendy Fashion Collection</h2>
+  <p>Explore the latest clothing and accessories.</p>
+
+  <div class="gallery">
+    <img src="Screenshot 2025-10-15 062329.png" alt="t shirts">
+  <img src="Screenshot 2025-10-15 062544.png" alt="traditional">
+  <img src="Screenshot 2025-10-15 062822.png" alt="casual weare">
+  <img src="Screenshot 2025-10-15 062940.png" alt="modern dressses">
+  <img src="Screenshot 2025-10-15 063305.png" alt="party weare">
+  <img src="Screenshot 2025-10-15 063410.png" alt="jeans">
+  <img src="Screenshot 2025-10-15 063455.png" alt="ethinic weare">
+  <img src="Screenshot 2025-10-15 063758.png" alt="Accessories">
+  <img src="Screenshot 2025-10-15 063623.png" alt="watches">
+  <img src="Screenshot 2025-10-15 060131.png" alt="Street Style">
+
+    
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Shopping World | Designed by Ishwarya
+</footer>
+
+</body>
+</html>
+foot weare.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Footwear - Shopping World</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f8ff;
+}
+nav {
+  background-color: #222;
+  overflow: hidden;
+}
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #2ecc71;
+}
+.active {
+  background-color: #2ecc71;
+}
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="electronic.html">Electronics</a>
+  <a href="fashion.html">Fashion</a>
+  <a class="active" href="foot weare.html">Footwear</a>
+  <a href="login.html" class="login">Login</a>
+
+</nav>
+
+<div class="container">
+  <h2>Stylish Footwear</h2>
+  <p>Find shoes, sandals, and sneakers that fit your style.</p>
+
+  <div class="gallery">
+    <img src="Screenshot 2025-10-15 000803.png" alt="Boots">
+    <img src="Screenshot 2025-10-15 000843.png" alt="Sneakers">
+    <img src="Screenshot 2025-10-15 000930.png" alt="Shoes">
+    <img src="Screenshot 2025-10-15 001032.png" alt="Casual Shoes">
+    <img src="Screenshot 2025-10-15 001748.png" alt="shoes">
+    <img src="Screenshot 2025-10-15 064450.png" alt="shoes">
+    <img src="Screenshot 2025-10-15 064646.png" alt="Accessories">
+    <img src="Screenshot 2025-10-15 064730.png" alt="watches">
+    <img src="Screenshot 2025-10-15 064823.png" alt="Street Style">
+    
+
+    
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Shopping World | Designed by Ishwarya
+</footer>
+
+</body>
+</html>
+
+login.html
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Responsive Website</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Shopping World</title>
   <style>
-    html {
-      scroll-behavior: smooth;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff5f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-    /* Header Gradient */
-    header {
-      background: linear-gradient(135deg, #007bff, #6610f2);
-      color: tomato;
-      padding: 40px 0;
-      text-align: center;
-    }
-
-    /* Navbar */
-    .navbar {
-      background-color: greenyellow;
-    }
-    .navbar a:hover {
-      color: #ffc107 !important;
-    }
-
-    /* Sections */
-    section {
-      padding: 60px 0;
-    }
-
-    #about {
-      background-color:hotpink;
-      
-    }
-    #services {
-      background-color: hotpink;
-    }
-    #contact {
-      background-color: violet;
-    }
-
-    /* Card Hover Effect */
-    .card {
-      transition: transform 0.6s, box-shadow 0.3s;
-      border: none;
+    .login-box {
+      background-color: #ffffff;
+      padding: 40px;
       border-radius: 10px;
-      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: right;
     }
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 20px blueviolet;
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #e84393;
     }
-
-    /* Footer */
-    footer {
-      background-color: indianred;
-      color: darkgoldenrod;
-      text-align: center;
-      padding: 15px;
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #e84393;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background-color: #d63074;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>My Responsive Website</h1>
-    <p class="lead">Designed beautifully with Bootstrap 5</p>
-  </header>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Brand of ishwarya</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Home Section -->
-  <section id="home" class="text-center">
-    <div class="container">
-      <h2 class="mb-4 text-primary fw-bold">Welcome to Our Website</h2>
-      <p class="lead mb-5">We design modern, colorful, and responsive websites that adapt beautifully to all devices.</p>
-      <div class="row">
-        <div class="col-md-4 col-sm-12 mb-4">
-          <div class="card">
-            <img src="Screenshot 2025-10-09 215005.png" class="card-img-top" alt="Modern Office Workspace">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Modern Office</h5>
-              <p class="card-text">A clean and minimal workspace for productivity.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-12 mb-4">
-          <div class="card">
-            <img src="Screenshot 2025-10-09 215026.png" class="card-img-top" alt="Laptop and Coffee on Desk">
-            <div class="card-body">
-              <h5 class="card-title text-success">Laptop & Coffee</h5>
-              <p class="card-text">The perfect setup for coding and creativity.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-12 mb-4">
-          <div class="card">
-            <img src="Screenshot 2025-10-09 215257.png" class="card-img-top" alt="Person Using Smartphone">
-            <div class="card-body">
-              <h5 class="card-title text-danger">Smartphone User</h5>
-              <p class="card-text">Stay connected anywhere, anytime.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container text-center">
-      <h2 class="text-primary fw-bold">About Us</h2>
-      <p class="lead mt-3">We are a passionate team of designers and developers creating high-quality digital experiences.</p>
-      <p>Our mission is to make every project not only functional but also visually stunning and user-friendly.</p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services">
-    <div class="container text-center">
-      <h2 class="text-success fw-bold">Our Services</h2>
-      <div class="row mt-4">
-        <div class="col-md-4">
-          <h5>💻 Web Design</h5>
-          <p>Creative and responsive web design tailored to your brand.</p>
-        </div>
-        <div class="col-md-4">
-          <h5 background="hotpink">⚙ Development</h5>
-          <p>Building reliable and high-performance web applications.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>📱 Mobile Friendly</h5>
-          <p>All our designs are optimized for any screen size or device.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container text-center">
-      <h2 class="text-warning fw-bold">Contact Us</h2>
-      <p class="lead">We’d love to hear from you! Get in touch for any inquiries.</p>
-      <p>Email: <strong>info@example.com</strong></p>
-      <p>Phone: <strong>+91 98765 43210</strong></p>
-      <button class="btn btn-primary mt-3">Send Message</button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Responsive Website | Built with ❤ using Bootstrap</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
 # OUTPUT:
-<img width="1920" height="1080" alt="Screenshot 2025-10-09 224803" src="https://github.com/user-attachments/assets/d138725e-9036-415d-a106-9a45f976d3a0" />
-<img width="1920" height="1080" alt="Screenshot 2025-10-09 224748" src="https://github.com/user-attachments/assets/39eaf1de-03f5-4655-8025-85a16b1fac79" />
-
-<img width="1920" height="1080" alt="Screenshot 2025-10-09 224803" src="https://github.com/user-attachments/assets/59b863c4-1f45-4602-a1d8-c045b3c02455" />
 
 
+![alt text](<Screenshot 2025-10-15 070752.png>)
 
 
+![alt text](<Screenshot 2025-10-15 070812.png>)
+
+![alt text](<Screenshot 2025-10-15 070826.png>)
+
+
+![alt text](<Screenshot 2025-10-15 070839.png>)
+
+
+![alt text](<Screenshot 2025-10-15 070857.png>)
 
 # RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
